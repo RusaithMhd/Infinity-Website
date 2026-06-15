@@ -101,6 +101,15 @@
   color: var(--white);
   background: rgba(255, 255, 255, 0.12);
 }
+.navbar--home:not(.scrolled) .navbar__hamburger {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.navbar--home:not(.scrolled) .navbar__hamburger:hover,
+.navbar--home:not(.scrolled) .navbar__hamburger:focus-visible {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
+}
 .navbar--home:not(.scrolled) .navbar__hamburger span {
   background: var(--white);
 }
@@ -156,6 +165,15 @@
     border: 1px solid rgba(94, 234, 212, 0.2);
   }
   
+  .navbar.scrolled .navbar__hamburger {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+  .navbar.scrolled .navbar__hamburger:hover,
+  .navbar.scrolled .navbar__hamburger:focus-visible {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--accent-light);
+  }
   .navbar.scrolled .navbar__hamburger span {
     background: var(--white);
   }
@@ -239,13 +257,18 @@
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  padding: 6px;
+  padding: 8px 10px;
   border-radius: var(--radius-sm);
-  transition: background var(--transition);
+  transition: all var(--transition);
+  background: var(--bg-alt);
+  border: 1px solid var(--border-strong);
+  outline: none;
 }
 
-.navbar__hamburger:hover {
+.navbar__hamburger:hover,
+.navbar__hamburger:focus-visible {
   background: var(--accent-glow);
+  border-color: var(--accent);
 }
 
 .navbar__hamburger span {

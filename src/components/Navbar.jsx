@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const hamburgerRef = useRef(null);
   const location = useLocation();
   const isHome = location.pathname === '/';
 
@@ -18,6 +19,22 @@ export default function Navbar() {
     const onResize = () => { if (window.innerWidth > 900) setMenuOpen(false); };
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
+  }, []);
+
+  // Explicit touchStart listener with passive: false for mobile reliability
+  useEffect(() => {
+    const button = hamburgerRef.current;
+    if (!button) return;
+
+    const handleTouchStart = (e) => {
+      e.preventDefault();
+      setMenuOpen(v => !v);
+    };
+
+    button.addEventListener('touchstart', handleTouchStart, { passive: false });
+    return () => {
+      button.removeEventListener('touchstart', handleTouchStart);
+    };
   }, []);
 
   const links = [
@@ -59,9 +76,9 @@ export default function Navbar() {
 
           {/* Hamburger — explicit touchStart for mobile reliability */}
           <button
+            ref={hamburgerRef}
             className={`navbar__hamburger${menuOpen ? ' open' : ''}`}
             onClick={() => setMenuOpen(v => !v)}
-            onTouchEnd={e => { e.preventDefault(); setMenuOpen(v => !v); }}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
             aria-controls="mobile-nav"
