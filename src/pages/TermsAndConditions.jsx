@@ -18,8 +18,8 @@ const TermsAndConditions = () => {
       <p>By accessing or using the Infinity Allianze website, you acknowledge that you have read, understood, and agree to be bound by these Terms &amp; Conditions, including any future updates posted here.</p>
       <h2>Contact Information</h2>
       <ul>
-        <li>Phone: 112303359</li>
-        <li>Email: <a href="mailto:info@infinityallianze.com">info@infinityallianze.com</a></li>
+        <li>Phone: +940702665352</li>
+        <li>Email: <a href="mailto:social@infinityallianze.com">social@infinityallianze.com</a></li>
       </ul>
       <h2>Use of Site</h2>
       <p>You agree not to misuse the site, to respect intellectual property, and to comply with applicable laws.</p>

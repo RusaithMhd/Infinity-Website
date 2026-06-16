@@ -187,13 +187,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 18px;
   height: 100%;
 }
 
 .navbar__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   text-decoration: none;
 }
 
@@ -228,11 +229,11 @@
 .navbar__links {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 16px;
 }
 
 .navbar__link {
-  padding: 8px 16px;
+  padding: 10px 18px;
   border-radius: var(--radius-full);
   font-size: 0.92rem;
   font-weight: 500;
@@ -248,8 +249,8 @@
 }
 
 .navbar__cta {
-  padding: 10px 22px;
-  font-size: 0.9rem;
+  padding: 12px 24px;
+  font-size: 0.95rem;
 }
 
 .navbar__hamburger {
@@ -744,7 +745,7 @@
   display: flex;
   align-items: center;
   z-index: 4;
-  padding: var(--nav-height) 0 80px;
+  padding: calc(var(--nav-height) + 24px) 0 84px;
 }
 
 .hero-fullbg__content .container {
@@ -800,10 +801,10 @@
   font-family: var(--font-heading);
   font-size: clamp(2.2rem, 5.5vw, 4.4rem);
   font-weight: 800;
-  line-height: 1.08;
+  line-height: 1.1;
   color: #ffffff;
-  margin: 18px 0 22px;
-  max-width: 700px;
+  margin: 22px 0 28px;
+  max-width: 720px;
   text-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 
@@ -817,18 +818,18 @@
 /* Sub-headline */
 .hero-fullbg__desc {
   font-size: clamp(0.95rem, 2vw, 1.15rem);
-  color: rgba(255,255,255,0.82);
-  line-height: 1.75;
-  margin-bottom: 36px;
-  max-width: 560px;
+  color: rgba(255,255,255,0.86);
+  line-height: 1.8;
+  margin-bottom: 42px;
+  max-width: 620px;
 }
 
 /* CTA row */
 .hero-fullbg__actions {
   display: flex;
-  gap: 14px;
+  gap: 18px;
   flex-wrap: wrap;
-  margin-bottom: 52px;
+  margin-bottom: 56px;
 }
 
 /* Primary button (solid teal) */
@@ -870,8 +871,8 @@
 }
 
 .hero-fullbg__stat {
-  padding: 14px 24px 14px 0;
-  margin-right: 24px;
+  padding: 18px 28px 18px 0;
+  margin-right: 28px;
   border-right: 1px solid rgba(255,255,255,0.18);
   cursor: default;
 }
@@ -1536,14 +1537,14 @@
 .page-hero {
   background: linear-gradient(135deg, var(--bg-alt), var(--bg));
   border-bottom: 1px solid var(--border);
-  padding: 80px 0 64px;
+  padding: 100px 0 72px;
   text-align: center;
 }
 
 .page-hero__title {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .page-hero__desc {

@@ -18,8 +18,8 @@ const PrivacyPolicy = () => {
       <p><strong>Infinityallianze International PVT Ltd</strong> ("we", "our", "us") respects your privacy and is committed to protecting your personal data.</p>
       <h2>Contact Information</h2>
       <ul>
-        <li>Phone: 112303359</li>
-        <li>Email: <a href="mailto:info@infinityallianze.com">info@infinityallianze.com</a></li>
+        <li>Phone: +940702665352</li>
+        <li>Email: <a href="mailto:social@infinityallianze.com">social@infinityallianze.com</a></li>
       </ul>
       <h2>Data Collection</h2>
       <p>We collect personal information you provide when you subscribe to our newsletter, contact us through the website, or use our services. This may include your name, email address, phone number, and any additional details you voluntarily share.</p>

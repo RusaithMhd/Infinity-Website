@@ -95,7 +95,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="mailto:info@infinityallianze.com"
+                href="mailto:social@infinityallianze.com"
                 className="footer__social-btn"
                 aria-label="Email"
               >

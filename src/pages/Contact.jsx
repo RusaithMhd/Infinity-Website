@@ -23,9 +23,9 @@ const WhatsAppIcon = () => (
 
 const contactInfo = [
   { icon: <MapPin size={20} />, label: 'Office', value: 'No:48, 3rd Floor, IBM Building, Nawam Mawatha, Colombo - 02', href: null },
-  { icon: <Mail size={20} />, label: 'Email', value: 'info@infinityallianze.com', href: 'mailto:info@infinityallianze.com' },
-  { icon: <Phone size={20} />, label: 'Phone', value: '+94 112 303 359', href: 'tel:+94112303359' },
-  { icon: <WhatsAppIcon />, label: 'WhatsApp', value: '+94 112 303 359', href: 'https://wa.me/94112303359', whatsapp: true },
+  { icon: <Mail size={20} />, label: 'Email', value: 'social@infinityallianze.com', href: 'mailto:social@infinityallianze.com' },
+  { icon: <Phone size={20} />, label: 'Phone', value: '+940702665352', href: 'tel:+94702665352' },
+  { icon: <WhatsAppIcon />, label: 'WhatsApp', value: '+940702665352', href: 'https://wa.me/94702665352', whatsapp: true },
   { icon: <Clock size={20} />, label: 'Business Hours', value: 'Mon – Fri, 9:00 AM – 6:00 PM GMT', href: null },
 ];
 
@@ -174,7 +174,7 @@ export default function Contact() {
   };
 
   const openWhatsApp = () => {
-    window.open(`https://wa.me/94112303359?text=${buildWhatsAppMessage()}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/94702665352?text=${buildWhatsAppMessage()}`, '_blank', 'noopener,noreferrer');
   };
 
   /* ─ Build mailto: link so the user's email app opens pre-filled ─ */
@@ -187,7 +187,7 @@ export default function Contact() {
       `Service: ${form.service || 'Not specified'}\n\n` +
       `Message:\n${form.message || ''}`
     );
-    window.location.href = `mailto:info@infinityallianze.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:social@infinityallianze.com?subject=${subject}&body=${body}`;
   };
 
   const handleSubmit = e => {
